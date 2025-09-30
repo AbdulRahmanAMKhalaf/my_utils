@@ -1,3 +1,8 @@
-## 0.0.1
+# Changelog
 
-* TODO: Describe initial release.
+## 0.0.4
+
+- Added Dio interceptors
+- Added Storage helpers
+- Added Firebase-safe initialization
+- Added Logging utilities
