@@ -1,5 +1,5 @@
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:my_utils/cores/failure/failure.dart';
+import 'package:flutter_core_utils/cores/failure/failure.dart';
 import 'package:flutter/foundation.dart';
 
 class CacheHelper {

@@ -1,7 +1,7 @@
 import 'dart:developer' as dev;
 import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
-import 'package:my_utils/cores/constants/index.dart';
+import 'package:flutter_core_utils/cores/constants/index.dart';
 
 class NotificationService {
   final FirebaseMessaging messaging;
@@ -38,8 +38,8 @@ class NotificationService {
   Future<void> _initializeLocalNotifications() async {
     // 📱 Android: Create notification channel (REQUIRED for Android 8+)
     if (Platform.isAndroid) {
-      const AndroidNotificationChannel
-      androidChannel = AndroidNotificationChannel(
+      const AndroidNotificationChannel androidChannel =
+          AndroidNotificationChannel(
         'general_channel_id', // ID — must match in AndroidNotificationDetails
         'General Notifications', // Name — shown in system settings
         description: 'Channel for general app notifications',
@@ -54,8 +54,7 @@ class NotificationService {
 
       await localPlugin
           .resolvePlatformSpecificImplementation<
-            AndroidFlutterLocalNotificationsPlugin
-          >()
+              AndroidFlutterLocalNotificationsPlugin>()
           ?.createNotificationChannel(androidChannel);
     }
 
@@ -144,13 +143,13 @@ class NotificationService {
     // 📱 Android settings
     const AndroidNotificationDetails androidDetails =
         AndroidNotificationDetails(
-          'general_channel_id', // 👈 MUST match channel ID created above
-          'General Notifications',
-          channelDescription: 'Channel for general app notifications',
-          importance: Importance.max,
-          priority: Priority.high,
-          playSound: true,
-        );
+      'general_channel_id', // 👈 MUST match channel ID created above
+      'General Notifications',
+      channelDescription: 'Channel for general app notifications',
+      importance: Importance.max,
+      priority: Priority.high,
+      playSound: true,
+    );
 
     // 🍏 iOS settings
     const DarwinNotificationDetails iOSdetails = DarwinNotificationDetails(
@@ -241,8 +240,7 @@ Future<void> _firebaseBackgroundHandler(RemoteMessage message) async {
 
     await localPlugin
         .resolvePlatformSpecificImplementation<
-          AndroidFlutterLocalNotificationsPlugin
-        >()
+            AndroidFlutterLocalNotificationsPlugin>()
         ?.createNotificationChannel(channel);
 
     await localPlugin.initialize(
@@ -255,12 +253,12 @@ Future<void> _firebaseBackgroundHandler(RemoteMessage message) async {
   if (notification != null) {
     const AndroidNotificationDetails androidDetails =
         AndroidNotificationDetails(
-          'general_channel_id',
-          'General Notifications',
-          importance: Importance.max,
-          priority: Priority.high,
-          playSound: true,
-        );
+      'general_channel_id',
+      'General Notifications',
+      importance: Importance.max,
+      priority: Priority.high,
+      playSound: true,
+    );
 
     const NotificationDetails notificationDetails = NotificationDetails(
       android: androidDetails,

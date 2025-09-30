@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_utils/cores/constants/index.dart';
-
+import 'package:flutter_core_utils/cores/constants/index.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

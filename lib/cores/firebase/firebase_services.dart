@@ -1,4 +1,4 @@
-import 'package:my_utils/cores/constants/index.dart';
+import 'package:flutter_core_utils/cores/constants/index.dart';
 
 class FirebaseServices {
   final FirebaseAuth firebaseAuth;

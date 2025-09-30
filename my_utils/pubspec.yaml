@@ -1,7 +1,6 @@
-name: my_utils
-description: "A new Flutter package project."
+name: flutter_core_utils
+description: A new Flutter package project.
 version: 0.0.1
-homepage:
 
 environment:
   sdk: ^3.9.2
