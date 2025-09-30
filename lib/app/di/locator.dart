@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_core_utils/cores/constants/index.dart';
+import 'package:abk_flutter_utils/cores/constants/index.dart';
 
 final locator = GetIt.instance;
 
