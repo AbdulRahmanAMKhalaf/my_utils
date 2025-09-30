@@ -1,7 +1,7 @@
 import 'dart:developer';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_core_utils/cores/constants/index.dart';
+import 'package:abk_flutter_utils/cores/constants/index.dart';
 
 Interceptor buildConnectivityInterceptor({Connectivity? connectivity}) {
   return InterceptorsWrapper(

@@ -1,5 +1,5 @@
 
-# flutter_core_utils Package
+# abk_flutter_utils Package
 
 A modular Flutter package for scalable app development, featuring:
 - Dependency injection (GetIt)

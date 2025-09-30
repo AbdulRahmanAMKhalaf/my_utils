@@ -1,7 +1,7 @@
 import 'dart:developer' as dev;
 import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
-import 'package:flutter_core_utils/cores/constants/index.dart';
+import 'package:abk_flutter_utils/cores/constants/index.dart';
 
 class NotificationService {
   final FirebaseMessaging messaging;
